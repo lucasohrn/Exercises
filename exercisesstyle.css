@@ -11,3 +11,63 @@
     display: table;
     clear: both;
   }
+
+  .grid {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    width: 100%;
+  }
+  
+  .card {
+    border: 2px solid darkgray;
+    width: 10em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .card img {
+    height: 10em;
+    border: 1px solid black;
+  }
+
+  .card:hover
+  {
+    transform: translateY(-15px);
+  }
+
+  .card:hover .hidden
+  {
+    display: block;
+  }
+
+  .hidden
+  {
+    display: none;
+  }
+
+  .grid div 
+  {
+    background-color: rgb(131, 74, 74);
+  }
+
+  .card h2
+  {
+    font-weight: 0;
+    font-size: 1em;
+    margin: 0em;
+    text-align: center;
+  }
+
+  .card h3
+  {
+    font-size: 1em;
+    margin: 0em;
+    font-weight: 100;
+  }
+
+  

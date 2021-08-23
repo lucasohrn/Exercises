@@ -20,69 +20,43 @@
         </ul>
     </header>
 
-    <div class="emptybox"></div>
-    
-    <!-- Load Font Awesome Icon Library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Buttons to choose list or grid view -->
-<button onclick="listView()"><i class="fa fa-bars"></i> List</button>
-<button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="column" style="background-color:#ccc;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <h2>Column 4</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-
-<script>
-    // Get the elements with class="column"
-    var elements = document.getElementsByClassName("column");
-    
-    // Declare a loop variable
-    var i;
-    
-    // List View
-    function listView() {
-      for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "100%";
-      }
-    }
-    
-    // Grid View
-    function gridView() {
-      for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "50%";
-      }
-    }
-    
-    /* Optional: Add active class to the current button (highlight it) */
-    var container = document.getElementById("btnContainer");
-    var btns = container.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
-    </script>
+    <div class="grid">
+      <div class="card">
+        <a href="index.html"><img src="https://www.el-ge.se/images/thumbs/0105208_daiwa-ninja-combo-8ft-7-28g.jpeg" /></a>
+        <h2>Daiwa Ninja Combo </h2>
+        <h3>5990</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.cdon.com/media-dynamic/images/product/FishingRodsSets/000/053/807/048/53807048-88278093-11453-org.jpg?impolicy=product&w=340&h=340" />
+        <h2>CDON fick-fiskespö</h2>
+        <h3>799</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.cdon.com/media-dynamic/images/product/FishingRodsSets/000/053/807/048/53807048-88278093-11453-org.jpg?impolicy=product&w=340&h=340" />
+        <h2>fick-fiskespö</h2>
+        <h3>599</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.cdon.com/media-dynamic/images/product/FishingRodsSets/000/053/807/048/53807048-88278093-11453-org.jpg?impolicy=product&w=340&h=340" />
+        <h2>cdon</h2>
+        <h3>499</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.cdon.com/media-dynamic/images/product/FishingRodsSets/000/053/807/048/53807048-88278093-11453-org.jpg?impolicy=product&w=340&h=340" />
+        <h2>errer</h2>
+        <h3>300</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.cdon.com/media-dynamic/images/product/FishingRodsSets/000/053/807/048/53807048-88278093-11453-org.jpg?impolicy=product&w=340&h=340" />
+        <h2>rororo</h2>
+        <h3>900</h3>
+      </div>
+      <div class="card">
+        <img src="https://cdn.cdon.com/media-dynamic/images/product/FishingRodsSets/000/053/807/048/53807048-88278093-11453-org.jpg?impolicy=product&w=340&h=340" />
+        <h2>hej</h2>
+        <h3>499</h3>
+      </div>
+    </div>
 
 </body>
 
